@@ -8,7 +8,7 @@ import Logo from './Logo'
 import './index.scss'
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate-home')
 
   const nameArray = ['l', 'y', 'e', 's']
   const jobArray = [
@@ -60,7 +60,7 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End Developer / JavaScript Expert / Gamer</h2>
+          <h2>Full stack Developer / Mern stack / Junior</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

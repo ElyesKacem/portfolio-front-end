@@ -6,8 +6,19 @@
   animation-delay: 1s;
   animation-fill-mode: forwards;
   min-width: 10px;
+  color:#28B78D
+}
+.text-animate-home {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
   color:#243743
 }
+
 
 .text-animate-hover {
   min-width: 10px;
@@ -22,6 +33,11 @@
 
 @for $i from 1 through 35 {
   .text-animate._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+@for $i from 1 through 35 {
+  .text-animate-home._#{$i} {
     animation-delay: #{$i / 10}s;
   }
 }
