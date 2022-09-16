@@ -6,6 +6,7 @@
   animation-delay: 1s;
   animation-fill-mode: forwards;
   min-width: 10px;
+  color:#243743
 }
 
 .text-animate-hover {
@@ -15,7 +16,7 @@
 
   &:hover {
     animation: rubberBand 1s;
-    color: #ffd700;
+    color: #28B78D;
   }
 }
 
