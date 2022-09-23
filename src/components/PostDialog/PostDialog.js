@@ -25,11 +25,11 @@ export default function PostDialog(props) {
     const data = new FormData(event.currentTarget);
     console.log({
       title: data.get('title'),
-      userLink: data.get('userLink'),
-      codeLink: data.get('codeLink'),
+      visitLink: data.get('visitLink'),
+      codeSource: data.get('codeSource'),
       videoLink: data.get('videoLink'),
       downloadLink: data.get('downloadLink'),
-      uploadedFile: postFile[0],
+      image: postFile[0],
       hide: (data.get('hide') ? true : false),
     });
   }
@@ -77,19 +77,19 @@ export default function PostDialog(props) {
                       <TextField
                         required
                         fullWidth
-                        id="userLink"
+                        id="visitLink"
                         label="Demo link"
-                        name="userLink"
+                        name="visitLink"
                       />
                     </Grid>
                     <Grid item xs={12}>
                       <TextField
                         required
                         fullWidth
-                        name="codeLink"
+                        name="codeSource"
                         label="Code source"
                         type="url"
-                        id="codeLink"
+                        id="codeSource"
                       />
                     </Grid>
                     <Grid item xs={12}>
