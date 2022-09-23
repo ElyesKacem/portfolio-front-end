@@ -36,24 +36,27 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #ffffff;
     height: 50px;
     font-size: 16px;
     color: #243743;
     padding: 0 20px;
+    border:#28B78D solid 1px;
     box-sizing: border-box;
   }
 
   textarea {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #ffffff;
     height: 50px;
     font-size: 16px;
     color: #243743;
     padding: 20px;
+    border:#28B78D solid 1px;
     box-sizing: border-box;
     min-height: 150px;
+    resize: none;
   }
 
   .flat-button {
@@ -98,13 +101,14 @@
   z-index: 999999;
   width: 267px;
   padding: 20px;
-  color: #243743;
+  color: white;
   font-family: 'Helvetica';
   font-size: 17px;
   font-weight: 300;
   opacity: 0;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   span {
     font-size: 16px;

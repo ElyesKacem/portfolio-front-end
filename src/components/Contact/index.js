@@ -4,6 +4,10 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
+import Paper from '@mui/material/Paper';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
 import './index.scss'
 
 const Contact = () => {
@@ -43,6 +47,8 @@ const Contact = () => {
               idx={15}
             />
           </h1>
+          <Paper style={{padding:"10px 20px 10px 20px"}}>
+
           <p>
             I am interested in freelance opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
@@ -83,21 +89,19 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+          </Paper>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+        <LocationOnIcon/>  Bizerte, Binzart, Tunisia
           <br />
-          Serbia,
+          <PhoneIcon/> +216 52 257 044
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
-          <br />
-          <span>freelancerslobodan@gmail.com</span>
+          <span style={{display:'flex',alignItems:'center',justifyContent:'center'}}> <EmailIcon/>elyeskacemeducation@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          <MapContainer center={[37.268474, 9.875249]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
+            <Marker position={[37.268474, 9.875249]}>
               <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>

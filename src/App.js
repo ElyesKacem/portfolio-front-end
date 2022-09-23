@@ -6,6 +6,8 @@ import Layout from './components/Layout'
 import Portfolio from './components/Portfolio'
 import Dashboard from './components/Dashboard'
 import './App.scss'
+import Login from './components/Login'
+import Admin from './components/Admin/Admin'
 
 function App() {
   return (
@@ -17,7 +19,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/admin" element={<Admin />} />
+        <Route path="/login" exact element={<Login/>} />
         </Route>
+
+
       </Routes>
     </>
   )
